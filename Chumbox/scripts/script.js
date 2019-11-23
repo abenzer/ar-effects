@@ -1,16 +1,17 @@
 // Load in the required modules
- const NativeUI = require('NativeUI');
- const Scene = require('Scene');
- const TouchGestures = require('TouchGestures');
+const NativeUI = require('NativeUI');
+const Scene = require('Scene');
+const TouchGestures = require('TouchGestures');
 
- // Create a variable to store the name of our text object
- const textNodeName  = 'captionCamera';
+// Create a variable to store the name of our text object
+// var textNodeName  = 'captionCamera';
 
- // Access the text object in our scene
- const text = Scene.root.find(textNodeName);
+makeEditable('captionCamera');
+makeEditable('box2Caption');
 
- // Register a tap gesture on the text node
+function makeEditable(textNodeName) {
+ var text = Scene.root.find(textNodeName);
  TouchGestures.onTap(text).subscribe(function() {
- // Edit the text through the NativeUI module
- NativeUI.enterTextEditMode(textNodeName);
+   NativeUI.enterTextEditMode(textNodeName);
  });
+}
