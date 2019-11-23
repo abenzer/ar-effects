@@ -1,0 +1,9 @@
+# MTL written from C:\Users\pawel.filip\Desktop\PADDLE\PADDLE.obj
+newmtl PADDLE
+Kd 1.00 1.00 1.00
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.04 0.04 0.04
+map_Kd C:\Users\pawel.filip\Desktop\PADDLE\PADDLE_base.jpg
