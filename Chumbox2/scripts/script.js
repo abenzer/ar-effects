@@ -7,7 +7,7 @@ const Textures = require('Textures');
 const TouchGestures = require('TouchGestures');
 var Patches = require('Patches');
 
-textures = [1, 2, 3, 4, 4, 6, 7, 8, 9, 4];
+textures = [1, 2, 3, 4, 10, 6, 7, 8, 9, 11];
 setTextures();
 
 var triggerIn = Patches.getPulseValue('triggerIn');
